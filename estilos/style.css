@@ -5,3 +5,59 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(to bottom, #5f2c82,#49a09d);
+    position: relative;
+}
+
+section#login {
+    width: 250px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0px 0px 10px 10px;
+}
+
+section#login div#imagem {
+    height: 200px;
+    
+    background-image: url(../imagens/metal.jpg);
+    background-position: left bottom;
+    background-size: cover;
+}
+
+section#login div#formulario {
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#formulario h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+#formulario p {
+    padding: 10px;
+}
+
+#formulario input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
