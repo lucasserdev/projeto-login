@@ -7,57 +7,48 @@
 */
 
 * {
-    padding: 0;
-    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
-body {
+body, html {
+    background-color: #5f2c82;
+    height: 100vh;
     width: 100vw;
 }
 
 main {
-    width: 100vw;
-    height: 100vh;
-
-    background-image: linear-gradient(to bottom, #5f2c82,#49a09d);
     position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 
 section#login {
-    width: 250px;
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 0px 0px 10px 10px;
-}
+    overflow: hidden;
 
-section#login div#imagem {
-    height: 200px;
-    
-    background-image: url(../imagens/metal.jpg);
-    background-position: left bottom;
-    background-size: cover;
-}
-
-section#login div#formulario {
     background-color: white;
-    border-radius: 0px 0px 10px 10px;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
-#formulario h1 {
-    text-align: center;
-    padding: 10px;
+section#login > div#imagem {
+    display: block;
+    background: #5f2c82 url(../imagens/metal.jpg) no-repeat left bottom/ cover;
+    height: 200px;
 }
 
-#formulario p {
+section#login > div#formulario {
+    display: block;
     padding: 10px;
-}
-
-#formulario input {
-    padding: 10px;
-    margin-top: 10px;
-    margin-left: 30px;
 }
